@@ -49,6 +49,35 @@ function resetCalculator() {
     errorMessage.textContent = '';
 }
 
+// Event listeners
+billAmountInput.addEventListener('input', (event) => {
+    // Convert the input string to a number
+    billAmount = parseFloat(event.target.value);
+    // Recalculate whenever the bill amount changes
+    calculateAndDisplay();
+});
+
+// Use forEach to attach a 'change' listener to each tip radio button
+tipPercentageButtons.forEach(button => {
+    button.addEventListener('change', (event) => {
+        // Check if a button is actually selected
+        if (event.target.checked) {
+            // Convert the button's value string to a number
+            tipPercentage = parseInt(event.target.value, 10);
+            // Recalculate when a new tip percentage is chosen
+            calculateAndDisplay();
+        }
+    });
+});
+
+// Listen for a click on the reset button
+resetButton.addEventListener('click', resetCalculator);
+
+// Prevent the form from actually submitting and reloading the page
+calculatorForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+});
+
 });
 
 
