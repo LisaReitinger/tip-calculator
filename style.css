@@ -37,3 +37,10 @@ text-align: center;
 margin-bottom: 2rem;
 color: #6c757d;;
 }
+
+/* Form Layout */
+.calculator-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
