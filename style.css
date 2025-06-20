@@ -1,3 +1,28 @@
+/* Mobile first approach */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
 body{
-    
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff; 
+}
+
+.calculator-container{
+max-width: 450px;
+background: #f2f2f2;
+border-radius: 10px;
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+padding: 2rem;
+width: 100%;
 }
