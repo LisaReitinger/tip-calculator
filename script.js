@@ -34,5 +34,21 @@ function calculateAndDisplay(){
     totalAmountOutput.textContent = `$${totalValue.toFixed(2)}`;
 }
 
-})
+// Reset Function
+function resetCalculator() {
+    // Reset the form which clears inputs and radio selections
+    calculatorForm.reset();
+    
+    // Reset state variables
+    billAmount = 0.0;
+    tipPercentage = 0;
+
+    // Reset the display and error messages
+    tipAmountOutput.textContent = '$0.00';
+    totalAmountOutput.textContent = '$0.00';
+    errorMessage.textContent = '';
+}
+
+});
+
 
