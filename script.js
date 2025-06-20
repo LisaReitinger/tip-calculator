@@ -78,6 +78,9 @@ calculatorForm.addEventListener('submit', (event) => {
     event.preventDefault();
 });
 
+// Initial state
+resetCalculator();
+
 });
 
 
