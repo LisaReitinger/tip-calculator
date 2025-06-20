@@ -2,6 +2,8 @@
 
 A simple, elegant, and responsive tip calculator application built with vanilla HTML, CSS, and JavaScript. It allows users to input a bill amount, select a tip percentage, and see the calculated tip and total amount update in real time. This project was built with a focus on clean UI/UX, accessibility, and fundamental JavaScript concepts.
 
+[**View Project Instructions on Google Docs**](https://docs.google.com/document/d/1IoHJYoI3eJxWq6dJdbsgEZdS9hof6cjpC9uXUNNtn7Q/edit?usp=sharing)
+
 ![Screenshot of the Tip Calculator](images/tip-calculator.png)
 
 
